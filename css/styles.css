@@ -11,6 +11,7 @@
     --adress-link: rgba(255, 255, 255, 0.6);
     --border-card: #EEEEEE;
     --portfolio-bgc: #E5E5E5;
+    --bgc-image-hero: #C4C4C4;
 }
 
 html {
@@ -180,12 +181,27 @@ img{
 /* main */
 /* hero */
 .hero {
-    background-color: var(--bgc-foot-hero);
+    /* background-color: var(--bgc-foot-hero); */
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.overlay{
+    max-width: 1600px;
+    min-height: 600;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 5px solid red;
+
+    background-image: url(../images/hero/Img-hero.jpg);
+    /* background: rgba(47, 48, 58, 0.4); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -216,6 +232,8 @@ img{
 .button-hero:focus{
     color: var(--text-third-tlbgc);
 }
+
+
 
 
 /* секція особливості/features */
@@ -325,6 +343,26 @@ img{
     letter-spacing: 0.03em;
     margin-bottom: 0px;
 }
+
+/* Постійні клієнти */
+
+.clients{
+
+}
+
+.clients-title{
+    font-weight: 700;
+font-size: 36px;
+line-height: calc(42/36);
+text-align: center;
+letter-spacing: 0.03em;
+
+}
+
+.clients-items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 
 /* page2 portfolio */
 
