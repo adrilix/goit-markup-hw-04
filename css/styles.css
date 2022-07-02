@@ -356,13 +356,18 @@ font-size: 36px;
 line-height: calc(42/36);
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50;
 
 }
 
 .clients-items{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    
+}
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
 
 /* page2 portfolio */
 
