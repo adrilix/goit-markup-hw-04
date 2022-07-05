@@ -45,12 +45,20 @@
 
         <ul class="box-contacts list">
           <li class="contact">
-            <a class="list" href="info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="mail list" href="info@devstudio.com">
+              <svg class="svg-header" width="16" height="12">
+                <use href="./images/svg/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contact">
-            <a class="list" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="phone list" href="tel:+380961111111">
+              <svg class="svg-header" width="12" height="16">
+                <use href="./images/svg/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -58,11 +66,12 @@
 
     <!-- унікальний контент сторінки -->
     <main>
-      <h1 class="visually-hidden">портфоліо</h1>
       <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">портфоліо</h1>
         <!-- filters -->
         <h2 class="visually-hidden">кнопки переходу по типам проектів</h2>
-        <ul class="filters container list">
+        <ul class="filters list">
           <li class="button-filter-list">
             <button class="button-filter" type="button">Все</button>
           </li>
@@ -81,7 +90,8 @@
         </ul>
         <!-- projects -->
         <h2 class="visually-hidden">проекти</h2>
-        <ul class="container project-cards list">
+        <ul class="project-cards list">
+
           <li class="project-card">
             <img
               src="./images/projects/img-1.jpg"
@@ -199,11 +209,17 @@
             </div>
           </li>
         </ul>
-      </section>
-    </main>
-    <!-- підвал сторінки -->
+      </div>
+    </section>
+  </main>
+        
+        
+    <!-- підвал сторінки-->
     <footer class="footer">
-        <div class="container">
+      
+      <div class="container footer-blocks">
+        <h2 class="visually-hidden section-title">Все способьі коммуникации</h2>
+        <div class="footer-contacts">
           <a class="footer-link list" href="index.html"
             ><span class="logo-web">Web</span>
             <span class="logo-footer">Studio</span>
@@ -213,19 +229,73 @@
               <li>
                 <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="adress-link">
-                <a class="list" href="info@example.com"
-                  >info@example.com</a
-                >
+              <li>
+                <a class="adress-link list" href="info@example.com">info@example.com</a>
               </li>
-              <li class="adress-link">
-                <a class="list" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li>
+                <a class="adress-link list" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-      </footer>
-    </body>
-  </html>
+
+        <div class="footer-social">
+          <h3 class="social-subtitle">Присоединяйтесь</h3>
+          <ul class="social-links list">
+            <li class="social-network-li">
+              <a
+                class="network-link"
+                href=""
+                target="_blank"
+                aria-label="инстаграм компании"
+              >
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/svg/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-network-li">
+              <a
+                class="network-link"
+                href=""
+                target="_blank"
+                aria-label="твиттер компании"
+              >
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/svg/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-network-li">
+              <a
+                class="network-link"
+                href=""
+                target="_blank"
+                aria-label="фейсбук компании"
+              >
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/svg/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-network-li">
+              <a
+                class="network-link"
+                href=""
+                target="_blank"
+                aria-label="линкед ин компании"
+              >
+                <svg class="svg-social" width="20" height="20">
+                  <use href="./images/svg/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
